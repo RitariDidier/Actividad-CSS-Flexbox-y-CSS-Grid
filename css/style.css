@@ -1,0 +1,97 @@
+:root {
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-very-dark-blue: hsl(229, 23%, 23%);
+  --primary-dark-blue: hsl(227, 10%, 46%);
+  --dark_gray: hsl(0, 0%, 91%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+/** GLOBALES **/
+
+h3 {
+  font-size: 1.8rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: normal;
+  color: var(--primary-dark-blue);
+}
+img {
+  max-width: 100%;
+  width: 10rem;
+}
+/** UTILIDADES **/
+
+.circular {
+  border-radius: 50%;
+}
+
+.bg {
+  background-color: var(--primary-dark-cyan);
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor,
+.contenedor__fondo {
+  border-radius: 2rem;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.contenedor__fondo {
+  background-color: rgb(50, 144, 156);
+  width: 50rem;
+  height: 45rem;
+}
+
+.contenedor__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+  background-color: white;
+  padding-bottom: 6rem;
+}
+
+.contenedor__avatar--circular {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** CONTENEDOR INFO **/
+
+.contenedor__info {
+  padding: 1rem;
+  display: flex;
+  gap: 4rem;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.nombre {
+  color: var(--primary-very-dark-blue);
+}

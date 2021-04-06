@@ -1,0 +1,86 @@
+:root {
+  --primary-green: #169b21;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+span {
+  border: 1px solid white;
+}
+.contenedor {
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancha {
+  height: 40rem;
+  width: 80rem;
+  background-color: var(--primary-green);
+  display: grid;
+  grid-template-areas: "izquierda derecha";
+}
+
+.campos__izquierda {
+  grid-area: izquierda;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.campos__izquierda--main {
+  display: grid;
+  grid-template-areas: "izquierda derecha";
+}
+
+.izq-izq {
+  grid-area: izquierda;
+  border: 1px solid white;
+}
+
+.izq-der {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid white;
+}
+
+.campos__derecha {
+  grid-area: derecha;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.campos__derecha--main {
+  display: grid;
+  grid-template-areas: "izquierda derecha";
+}
+
+.der-der {
+  grid-area: derecha;
+  border: 1px solid white;
+}
+
+.der-izq {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.campos__derecha--header,
+.campos__derecha--footer,
+.campos__izquierda--header,
+.campos__derecha--footer {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
